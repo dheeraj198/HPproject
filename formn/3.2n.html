@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3.2n</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="form1.css">
+	<div class="mainp">
+	<div class="first">
+			<p><center>VERBAL AUTOPSY FORM</center><br>
+			<center>Form No.2 Post Neo-Natal Deaths(29 days to 5 Years)</center></p>
+			<p style="color:red;";><center>* marked fields are mandatory</center></p>
+	</div>
+		<table align="center" padding="10px" cellpadding="10">
+			<tr>
+				<td>District*:<br>
+				<input type="text" name="district" placeholder="District" required></td>
+				<td>Block*:<br>
+				<input type="text" name="block"  placeholder="Block" required></td>
+			</tr><tr>
+				<td>Village*:<br>
+				<input type="text" name="village" placeholder="Village" required></td>
+				<td>PHC Name*:<br>
+				<input type="text" name="phc"  placeholder="PHC-Name" required></td>
+			</tr><td>Sub-Center*:<br>
+				<input type="text" name="subCenter"  placeholder="Sub-Center" required></td>
+				<td>RHC Number of Mother/Baby*:<br>
+				<input type="text" name="rhcNumberOfMother/Baby" placeholder="RHC Number of Mother/Baby" required></td>
+				</tr><tr>
+				<td>Year*:<br>
+				<input type="text" name="year" placeholder="Year" required></td>
+				<td>Name of Head of Household*:<br>
+				<input type="text" name="household" placeholder="Head Household" required></td>
+				</tr><tr>
+				<td>Full Name of Deceased*:<br>
+				<input type="text" name="deceasedName" placeholder="Deceased-name" required></td>
+				<td>Full name of mother of deceased*:<br>
+				<input type="text" name="motherNameDeceased" placeholder="Head Household" required></td></tr>
+				<tr>
+					<td>1st HYS*:
+				<input type="checkbox" name="1sthys" required></td>
+				<td>2nd HYS*:
+				<input type="checkbox" name="2ndhys" required></td>
+				</tr>
+				</table>
+		<table class="third" align="center" padding="10px" cellpadding="10">
+			<tr><td><center>SECTION 1: Details For Respondent and Deceased</center></td></tr></table>
+		<table align="center" padding="10px" cellpadding="10">
+		<tr><th>Details of Respondent:</th></tr>
+		<tr>
+			<td>1.Name of Respondent*:</td>
+			<td><input type="text" placeholder="Respondent Name" name="respondentName" required></td></tr>
+
+			<tr>
+			<td>2. Relationship of respondent with deceased*:</td>
+			<td>
+				<select name="relationshipOfRespondentWithDeceased" required>
+					<option value="null">--Select--</option>
+					<option value="Brother/sister">Brother/sister</option>
+					<option value="Grandfather/Grandmother">Grandfather/Grandmother</option>
+					<option value="Mother/Father">Mother/Father</option>
+					<option value="Other relative">Other relative</option>
+					<option value="Neighbour/No relation">Neighbour/No relation</option>
+					<option value=" Unknown"> Unknown</option></select></td></tr>
+
+					<tr>
+					<td>3. Did the respondent live with the deceased during the events that led to death?*</td>
+					<td>
+					<select name="didTheRespondentLiveWithTheDeceasedDuringTheEventsThatLedToDeath" required>
+					<option value="null">--Select--</option>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+					<option value="unknown">Unknown</option></select></td></tr>
+			
+					<tr>
+					<td>4. What is the highest standard of education the respondent has completed?*</td>
+					<td>
+						<select name="whatIsTheHighestStandardOfEducationTheRespondentHasCompleted?" required>
+							<option value="null">--Select--</option>
+							<option value="Illiterate and literate with no formal education">Illiterate and literate with no formal education</option>
+							<option value="Literate, Primary or below">Literate, Primary or below</option>
+							<option value="Literate, Class XII">Literate, Class XII</option>
+							<option value="Literate, Middle">Literate, Middle</option>
+							<option value="Graduate & above">Graduate & above</option>
+							<option value="Literate, Matric (Class-X)">Literate, Matric (Class-X)</option>
+							<option value=" Unknown"> Unknown</option></select></td></tr>
+
+							<tr>
+							<td>5. Category*:</td>
+							<td>
+							<select name="category" required>
+							<option value="null">--Select--</option>
+							<option value="general">General</option>
+							<option value="obc">OBC</option>
+							<option value="st">ST</option>
+							<option value="sc">SC</option></select></td></tr>
+
+							<tr>
+								<td>6. Religion of the head of the household*:</td>
+							<td>
+							<select name="religionOfTheHeadOfTheHousehold" required>
+							<option value="null">--Select--</option>
+							<option value="hindu">Hindu</option>
+							<option value="muslims">Muslims</option>
+							<option value="christian">Christian</option>
+							<option value="sikh">Sikh</option>
+							<option value="buddhist">Buddhist</option>
+							<option value="jain">Jain</option>
+							<option value="no religion:">No religion</option>
+							<option value="others">others</option>
+							<option value="unknown">Unknown</option>
+							</select></td></tr><br><br><br>
+							
+							<tr><th>Details of deceased:</th></tr>
+							<tr>
+							<td>7. Deceased's Sex*:</td>
+							<td>
+							<select name="deceasedSex" required>
+							<option value="null">--Select--</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							</select></td></tr>
+
+							<tr>
+							<td>8. Age in completed months*:</td>
+							<td>
+							<select name="ageInCompletedMonths" required>
+							<option value="null">--Select--</option>
+							<option value="less than 1 day">Less than 1 year</option>
+							<option value="more than 1 year">More than 1 year</option>
+							</select></td></tr>
+
+							<tr>
+							<td>9. Date of birth*:</td>
+							<td>
+							<input type="date" name="deathOfBirth" required>
+							</td></tr>
+
+						<tr>
+							<td>10. Date of death*:</td>
+							<td><input type="date" name="dateOfDeath" required></td>
+						</tr>
+
+						<tr>
+							<td>11A. House address of the deceased*:</td>
+						 <td> <select name="district">
+                    <option value="null">--District--</option>
+                    <option value="Bilaspur">Bilaspur</option>
+                    <option value="Chamba">Chamba</option>
+                    <option value="Hamirpur">Hamirpur</option>
+                    <option value="Kangra">Kangra</option>
+                    <option value="Kinnaur">Kinnaur</option>
+                    <option value="kullu">kullu</option>
+                    <option value="Lahaul and Spiti">Lahaul and Spiti</option>
+                    <option value="mandi">Mandi</option>
+                    <option value="shimla">Shimla</option>
+                    <option value="Sirmaur">Sirmaur</option>
+                    <option value="solan">Solan</option>
+                    <option value="una">Una</option>
+                </select><br><br>
+                <input type="text" name="locality" placeholder="Locality" required>
+            <input type="text" name="address" placeholder="Area and Street"></td>
+        </tr>
+					</tr>
+						<tr>	
+							<td>11B. Pin Code*:</td>
+
+							<td><input type="text" name="pincode" placeholder="Pincode" required></td>
+						</tr>
+
+						<tr>
+							<td>12. Place of death*:</td>
+							<td>
+							<select name="placeOfDeath:" required>
+							<option value="null">--Select--</option>
+							<option value="home">Home</option>
+							<option value="private Hospital">Private Hospital</option>
+							<option value="PHC/CHC/rural hospital">PHC/CHC/Rural Hospital</option>
+							<option value="On way to health facility">On way to health facility</option>
+							<option value="Medical College">Medical College</option>
+							<option value="Sub Center">Sub Center</option>
+							<option value="District Hospital">District Hospital</option>
+							<option value="Other place">Other place</option>
+							<option value="unknown">Unknown</option>
+							</select>
+							</td></tr>
+
+							<tr>
+								<td>12. What did the respondent think the newborn died of?*<br>(Allow the respondent to tell the illness in his or her own words)</td>
+								<td><textarea rows="2" columns="2" placeholder="Type....." name="respondentThink" required></textarea></td>
+								<td></td>
+							</tr></table>
+
+							<table class="third" align="center" padding="10px" cellpadding="10">
+							<tr><td><center>Section 2: Child Death</center></td></tr></table>
+							<table align="center" padding="10px" cellpadding="10">
+								<tr>
+									<td>13A.Did she/he die from an injury or accident?*</td>
+									<td>
+										<select id="one" name="dids/heDieFromAnInjuryOrAccident?" required>
+											<option value="null">--Select--</option>
+											<option value="Yes">Yes</option>
+											<option value="No">No</option>
+											<option value="Unknown">Unknown</option>
+										</select>	
+									</td>
+									<td>13B.If yes, what kind of injury or accident?</td>
+									<td>
+										<select disabled="disabled" id="two" name="whatKindOfInjuryOrAccident?" required>
+											<option value="null">--Select--</option>
+											<option value="Road traffic injury">Road traffic injury</option>
+											<option value="Falls">Falls</option>
+											<option value="Fall  of objects">Fall of objects</option>
+											<option value="Burns">Burns</option>
+											<option value="Drowning">Drowning</option>
+											<option value="Poisoning">Poisoning</option>
+											<option value="Bite/Sting">Bite/Sting</option>
+											<option value="Natural Disaster">Natural Disaster</option>
+											<option value="Homicide/assault">Homicide/assault</option>
+											</select></td></tr></table>
+									 	<table align="center" padding="10px" cellpadding="10">
+									 		<tr><th>Details of baby after birth:</th></tr>
+				<tr>
+				<td>14A.When was she/he first breastfed?*</td>
+				<td>
+				<select name="whenWass/heFirstBreastfed?" required>
+					<option value="null">--Select--</option>
+					<option value="Immediately/within one hour of birth">Immediately/within one hour of birth</option>
+					<option value="Same day child was born">Same day child was born</option>
+					<option value="Second day or later">Second day or later</option>
+					<option value="Never breastfed">Never breastfed</option>
+					<option value="Unknown">Unknown</option>
+				</select></td></tr>
+				<tr><td>14B.Did the child receive anything other than breast milk to drink during the first 6 months of life?*</td>
+				<td>
+				<select name="didTheChildReceiveAnythingOtherThanBreastMilkToDrinkDuringTheFirst6MonthsOflife?" required>
+					<option value="null">--Select--</option>
+						<option value="Single">Single</option>
+						<option value="Multiple">Multiple</option>
+						<option value="Unknown">Unknown</option>
+					</select>
+				</td></tr>
+				<tr><td>14C.During the illness that led to death, was the child breastfeeding?*</td>
+				<td>
+				<select name="wasTheChildBreastfeeding?" required>
+					<option value="null">--Select--</option>
+						<option value="Single">Single</option>
+						<option value="Multiple">Multiple</option>
+						<option value="Unknown">Unknown</option>
+					</select>
+				</td>
+			    </tr>
+	</table>
+					<table align="center" padding="10px" cellpadding="10">
+							<tr><th>Details of sickness at time of death:</th></tr>
+							<tr>	
+		<td>15A.Did she/he have fever?*</td>
+			<td>
+				<select id="three" name="dids/heHaveFever?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>15B.If yes, how many completed days did the fever last?*</td>
+		<td>
+				<input disabled="disabled" id="four" type="text" name="howManyCompletedDaysDidTheFeverLast?" placeholder="No. of days" required>	
+		</td></tr>
+		<tr><td>15C.Was the fever accompanied by chills/rigors?*</td>
+			<td>
+				<select name="wasTheFeverAccompaniedByChills/Rigors?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+</tr>
+
+<tr>
+	<td>16.Did she/he have convulsions or fits?*</td>
+			<td>
+				<select name="dids/heHaveConvulsionsOrFits?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+</tr>
+<tr>
+	<td>17.Was she/he unconscious during the illness that led to death?*</td>
+			<td>
+				<select name="wass/heUnconsciousDuringTheIllnessThatLedToDeath?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+</tr>
+<tr>
+	<td>18.Did she/he develop stiffness of the whole body?*</td>
+			<td>
+				<select name="dids/heDevelopStiffnessOfTheWholeBody?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+</tr>
+<tr>
+	<td>19.Did she/he have a stiff neck (demonstrate)?*</td>
+			<td>
+				<select name="dids/heHaveAStiffNeck?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+</tr>
+					<tr>	
+		<td>20A.Did she/he have diarrhoea (more frequent or more liquid stools)?*</td>
+			<td>
+				<select id="five" name="dids/heHaveDiarrhoea?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>20B.If yes, how many completed days?</td>
+		<td>
+				<input disabled="disabled" id="six" type="text" name="howManyCompletedDays?" placeholder="No. of days" required>	
+		</td></tr>
+		<tr><td>20C.Was there blood in the stools?*</td>
+			<td>
+				<select name="wasThereBloodInTheStools?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+</tr>
+<tr>	
+		<td>21A.Did she/he have a cough?*</td>
+			<td>
+				<select id="seven" name="dids/heHaveACough?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>21B.If yes, how many completed days?*</td>
+		<td>
+				<input disabled="disabled" id="nine" type="text" name="howManyCompletedDays?" placeholder="No. of days" required>	
+		</td></tr>
+		<tr><td>21C.If yes, was there blood?</td>
+			<td>
+				<select disabled="disabled" id="ten" name="wasThereBlood?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+</tr>
+<tr>	
+		<td>22A.Did she/he have breathing difficulties?*</td>
+			<td>
+				<select id="eleven" name="dids/heHaveBreathingDifficulties?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>22B.If yes, how many completed days?</td>
+		<td>
+				<input disabled="disabled" id="twelve" type="text" name="howManyCompletedDays?" placeholder="No. of days" required>	
+		</td></tr>
+		<tr><td>22C.Did she/he have fast breathing?*</td>
+			<td>
+				<select name="dids/heHaveFastBreathing?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>22D.Did she/he have in-drawing of the chest?*</td>
+		<td>
+				<select name="dids/heHaveInDrawingOfTheChest?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>22E.Did she/he have wheezing (demonstrate sound)?*</td>
+			<td>
+				<select name="dids/heHaveWheezing?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+</tr>
+<tr>	
+		<td>23A.During the illness, did she/he have abdominal pain?*</td>
+			<td>
+				<select name="dids/heHaveAbdominalPain?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>23B.Did she/he have abdominal distention?*</td>
+		<td>
+				<select name="didds/heHaveAbdominalDistention?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>
+		</td>
+		</tr>
+<tr>	
+		<td>24A.Did she/he vomit?*</td>
+			<td>
+				<select id="thirteen" name="dids/heVomit?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>24B.If yes, how many completed days?</td>
+		<td>
+				<input disabled="disabled" id="fourteen" type="text" name="howManyCompletedDays?" placeholder="No. of days" required>	
+		</td>
+	</tr>
+
+	<tr>	
+		<td>25.Did the eye/skin colour change to yellow?*</td>
+			<td>
+				<select name="didTheEye/SkinColourChangeToYellow?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>	
+		<td>26A.Was the rash all over the body?*</td>
+		<td>
+				<select name="wasTheRashAllOverTheBody?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>26B.Did she/he have red eyes?*</td>
+			<td>
+				<select name="dids/heHaveRedEyes?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>26C.Was this measles (use local term)?*</td>
+		<td>
+				<select name="wasThisMeasles?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>	
+		<td>27.During the weeks preceding death, did she/he become very thin?*</td>
+			<td>
+				<select name="dids/heBecomeVeryThin?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>	
+		<td>28.During the weeks preceding death, did she/he have any swelling of hands, feet or abdomen?*</td>
+			<td>
+				<select name="dids/heHaveAnySwellingOfHands,FeetOrAbdomen?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>	
+		<td>29.During the weeks preceding death, did she/he suffer from lack of blood or appear pale?*</td>
+			<td>
+				<select name="dids/heSufferFromLackOfBloodOrAppearPale?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>	
+		<td>30.Compared to other children of the same age, was she/he growing normally?*</td>
+			<td>
+				<select name="wass/heGrowingNormally?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+	</tr>
+	<tr>	
+		<td>31A.Did she/he have multiple illnesses?*</td>
+			<td>
+				<select id="fifteen" name="dids/heHaveMultipleIllnesses?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>31B.If yes, what were the symptoms associated with these illnesses? (Check all that apply)</td>
+				<td>
+				<input disabled="disabled" id="a" type="checkbox" name="symptoms" value="Cough">Cough<br>
+				<input disabled="disabled" id="b" type="checkbox" name="symptoms" value="Diarrhoea">Diarrhoea<br>
+				<input disabled="disabled" id="c" type="checkbox" name="symptoms" value="Ear discharge">Ear discharge<br>
+				<input disabled="disabled" id="d" type="checkbox" name="symptoms" value="Fever">Fever<br>
+				<input disabled="disabled" id="e" type="checkbox" name="symptoms" value="Rashes">Rashes<br>
+				<input disabled="disabled" id="f" type="checkbox" name="symptoms" value="Other">Other<br>
+				<input disabled="disabled" id="g" type="checkbox" name="symptoms" value="Unknown">Unknown<br>	
+		</td>
+	</tr>
+	<tr>	
+		<td>32A.Did she/he receive BCG injection?*</td>
+			<td>
+				<select name="dids/heReceiveBCGInjection?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>32B.Number of dozes received of DPT (DPT-3)?*</td>
+			<td>
+				<input type="text" name="numberOfDozesReceivedOfDPT?" placeholder="No. of dozes" required>	
+		</td></tr>
+		<tr><td>32C.Did she/he receive polio drops in the mouth?*</td>
+			<td>
+				<select name="dids/heHaveMultipleIllnesses?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td></tr>
+		<tr><td>32D.Did she/he receive an injection for measles (use local term)?*</td>
+			<td>
+				<select name="dids/heReceiveAnInjectionForMeasles?" required>
+					<option value="null">--Select--</option>
+					<option value="Yes-only one">Yes-only one</option>
+					<option value="Yes-more than one">Yes-more than one</option>
+					<option value="No - did not receive any">No - did not receive any</option>
+					<option value="Unknown">Unknown</option>
+				</select>	
+		</td>
+	</tr>
+	</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+		<tr><td><center>Section 3: Written narrative in local language</center></td></tr></table>
+<table align="center" padding="10px" cellpadding="10">
+<tr>		
+		<td>44.Narrative language code:</td>
+		<td>
+			<textarea name="narrativeLanguageCode" rows="4" cols="80" placeholder="Please describe the symptoms in order of appearance, doctor consulted or hospitalization, history of similar episodes, enter the results from reports of the investigations if available."></textarea></td></td>
+		</td>
+
+<script src="3.2.js">
+</script>
+</table>
+<form action="action.php">
+        <span><center><br><input type="submit" class="submit" value="Submit"></center></span>
+    </form>
+</p></div>
+</body>
+</html>

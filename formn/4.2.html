@@ -1,0 +1,337 @@
+<html>
+<head>
+	<title>4.2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+	<form action="update" method=POST>
+	<div class="first41">
+		<p><center>Facility Based Child Death Review Form</center><br>
+	</div>
+<form action="update" method=POST>
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>DETAILS OF DECEASED</center></td></tr></table>      
+<table align="center" padding="10px" cellpadding="10">
+<tr>
+	<td width="20%">Impatient Number/ID:</td>
+	<td><input type="text" name="impatientNumber" placeholder="Impatient ID" required></td>
+</tr>
+
+<tr>
+<td>Age:</td>
+<td>
+	Years:
+<select  id="one" name="year">
+<option value="null">--Select an Year--</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+Months:<select disabled="disabled" id="two" name="months">
+<option value="null">--Select a Month--</option>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+</select></td>
+</tr>
+<tr>
+	<td>Gender:</td>
+ 	<td><input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">FeMale
+    </td>
+</tr>
+<tr></tr>
+<tr>
+	<td>Name:</td>
+	<td><input type="text" name="childName" placeholder="Child-name" required></td>
+</tr><tr>
+	<td>Name Of The Mother:</td>
+	<td><input type="text" name="motherName" placeholder="Mother-name" required></td>
+</tr>
+   <tr><td>Address:</td>
+   	<td>
+   	<input type="text" name="pincode" placeholder="Pincode">
+    <input type="text" name="district" placeholder="District" required>
+    <input type="text" name="state" placeholder="State" required>
+    <input type="text" name="houseNumber" placeholder="House Number" required>
+    <input type="text" name="locality" placeholder="Locality" required>
+</td></tr></div>
+<tr>
+	<td>Date of Birth:</td>
+	<td><input type="date" name="dob"></td>
+</tr>
+  
+<tr>
+	<td>Place of Birth:</td>
+	<td><input type="radio" name="placeOfBirth" value="Health facilty">Health Facilty
+        <input type="radio" name="placeOfBirth" value="home">Home
+    </td>
+</tr>
+<tr>
+	<td>Birth Weight:</td>
+	<td>Available on record?
+		<select id="three" name="availableOnRecord">
+        <option value="null">--Select yes or no--</option>
+        <option value="Yes">Yes</option>
+		<option value="No">No</option>
+		</select>
+		<input disabled="disabled" id="four" name="birthWeight" type="text" placeholder="Upto 2 decimal places in kgs">
+		</td>
+</tr>
+<tr>
+	<td>Date of Admission:</td>
+	<td><input type="date" name="addmissionDate"></td>
+</tr>
+<tr>
+	<td>Time of Admission:</td>
+  	<td><input type="time" name="timeOfAdmission"></td>
+</tr>
+<tr>
+	<td>Date of Death:</td>
+	<td><input type="date" name="dateOfDeath"></td>
+</tr>
+<tr>
+	<td>Time of Death:</td>
+  	<td><input type="time" name="timeOfDeath"></td>
+</tr>
+<tr>
+	<td>Death Certified by:</td>
+	<td><input type="text" name="nameOfTheDoctor" placeholder="Name of the Doctor">
+		<input type="text" name="desginationOfTheDoctor" placeholder="Desgination of the Doctor">
+	</td>
+</tr>
+</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Type of facilty where death took place</center></td></tr></table> 
+<table align="center" padding="10px" cellpadding="10">
+
+	<tr>
+		<td><b>Type of facilty where death took place:</b></td></tr>
+		<td><input type=radio name=typeOfFacility value="Sub district hospital/Taluq hospital">Sub district hospital/Taluq hospital<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacility value="CHC">CHC<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacility value="DH">DH<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacility value="DH">DH<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacility value="Referral Hospital">Referral hospital<br></td>
+	</tr><tr>
+		<td><input type=radio name=typeOfFacility value="5">Medical college/tertiary hospital<br></td>
+	</tr>
+</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Main complaints at the time of admission</center></td></tr></table>
+<table align="center" padding="25px" cellpadding="10">
+		<tr>
+			<th>Main complaints at the time of admission</th>
+			<th>Duration</th>
+		</tr>
+		<tr>
+			<td>Inability to Drink or Feed </td>
+			<td><input type="text" placeholder="No. Of Days" name="inabilityToDrinkOrFeed"></td>
+		</tr><tr>
+			<td>Fever:</td>
+			<td><input type="text" placeholder="No. Of Days" name=fever></td>
+		</tr><tr>
+				<td>Loose Stools</td>
+			<td><input type="text" placeholder="No. Of Days" name="looseStools"></td>
+		</tr>
+		<tr>
+			<td>Vomiting:</td>
+			<td><input type="text" placeholder="No. Of Days" name="vomiting"></td>
+		</tr>
+		<tr>
+			<td>Cough or Difficult breathing:</td>
+			<td><input type="text" placeholder="No. Of Days" name="coughOrDifficultBreathing"></td>
+		</tr>
+		<tr>
+			<td>Convulsions:</td>
+			<td><input type="text" placeholder="No. Of Days" name="convulsions"></td>
+		</tr>
+		<tr>
+			<td>Lethargic or Unconscious:</td>
+			<td><input type="text" placeholder="No. Of Days" name="lethargicOrUnconscious"></td>
+		</tr>
+
+		<tr>
+			<td>Appearance of Skin rashes:</td>
+			<td><input type="text" placeholder="No. of Days" name="rashes"></td>
+		</tr>
+				<tr>
+			<td>Bleeding:</td>
+			<td><input type="text" placeholder="No. Of Days" name="bleeding"></td>
+		</tr>
+		<tr>
+			<td>Injury(like fractures,wounds):</td>
+			<td><input type="text" placeholder="No. Of Days" name="injury"></td>
+		</tr>
+		<tr>
+			<td>Unknown Bites or Strings:</td>
+			<td><input type="text" placeholder="No. of Days" name="unknownBites"></td>
+		</tr><tr>
+			<td>Any other symptom:</td>
+			<td><textarea rows="5" columns="5" placeholder="Type To Text..." name="anyOtherSymptom" required></textarea></td>
+		</tr>
+		<tr>
+			<td>Weight on admission:</td>
+			<td><input type="text" name="weightOnAdmission" placeholder="Upto 2 decimal places in kgs"></td>
+		</tr>
+		<tr>
+			<td>Immunisation history:</td>
+			<td>
+				<input type=checkbox name=immunisationHistory value="BCG">BCG<br>
+				<input type=checkbox name=immunisationHistory value="DPT1">DPT1
+				<input type=checkbox name=immunisationHistory value="DPT2">DPT2
+				<input type=checkbox name=immunisationHistory value="DPT3">DPT3<br>
+				<input type=checkbox name=immunisationHistory value="OPV1">OPV1
+				<input type=checkbox name=immunisationHistory value="OPV2">OPV2
+				<input type=checkbox name=immunisationHistory value="OPV3">OPV3<br>
+				<input type=checkbox name=immunisationHistory value="Hepatitis B birth Dose">Hepatitis B birth Dose<br>
+				<input type=checkbox name=immunisationHistory value="Hepatitis B 1st birth Dose">Hepatitis B 1st birth Dose<br>
+				<input type=checkbox name=immunisationHistory value="Hepatitis B 2nd birth Dose">Hepatitis B 2nd birth Dose<br>
+				<input type=checkbox name=immunisationHistory value="Measles">Measles<br>
+				<input type=checkbox name=immunisationHistory value="Measles Booster">Measles Booster<br>
+				<input type=checkbox name=immunisationHistory value="HiB 1st dose ">HiB 1st dose <br>
+				<input type=checkbox name=immunisationHistory value="HiB 1st dose ">HiB 2nd dose 
+			</td>
+		</tr>
+	</table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Condition on Admission</center></td></tr></table>
+	<table align="center" padding="25px" cellpadding="10">
+		<tr>
+			<th>Breathing:</th>
+			<td>
+			<input type=radio name=breathing value="Normal Breathing">Normal Breathing<br>
+			<input type=radio name=breathing value="Severe chest in drawing">Severe Chest in Drawing<br>
+			<input type=radio name=breathing value="Apoenic episodes">Apoenic episodes<br>
+			<input type=radio name=breathing value="Central cyanosis">Central cyanosis<br>
+			<input type=radio name=breathing value="Not breathing or gasping">Not Breathing or Gasping<br>
+			</td> </tr><tr>
+			<th>Consciousness:</th>
+			<td>
+			<input type=radio name="consciousness" value="stable">Stable<br>
+			<input type=radio name="consciousness" value="Convulsions">Convulsions<br>
+			<input type=radio name="consciousness" value="Semi-conscious, responds to verbal commands ">Semi-conscious, responds to verbal commands <br>
+			<input type=radio name="consciousness" value=" Semi-conscious, responds to painful stimuli "> Semi-conscious, responds to painful stimuli <br>
+			<input type=radio name="consciousness" value="Unconscious ">Unconscious <br>
+			</td></tr>
+		<tr>
+			<th>Circulation:</th>
+				<td>
+				<input type=radio name=circulation value="Extremities: warm to touch / colder than the abdomen">Extremities: warm to touch / colder than the abdomen<br>
+				<input type=radio name=circulation value="Weak and fast pulse: whether 1+/2+/3+">Weak and fast pulse: whether 1+/2+/3+<br>
+				<input type=radio name=circulation value="Capillary Refill Time">Capillary Refill Time<br>
+				<input type=radio name=circulation value="<3 seconds "><3 seconds  <br>
+				<input type=radio name=circulation value=">3 seconds ">>3 seconds  <br></td>
+		</tr><tr>
+		<th>Other symptoms:</th>
+				<td>
+				<input type=checkbox name=otherSymptoms value="Dehydration">Dehydration <br>
+				<input type=checkbox name=otherSymptoms value="Bleeding">Bleeding<br>
+				<input type=checkbox name=otherSymptoms value="Icterus">Icterus<br>
+				<input type=checkbox name=otherSymptoms value="Petechial rashes or bruising">Petechial rashes or bruising<br>
+				<input type=checkbox name=otherSymptoms value="Trauma or other urgent surgical condition">Trauma or other urgent surgical condition<br>
+				<input type=checkbox name=otherSymptoms value="Burns">Burns<br>
+				<input type=checkbox name=otherSymptoms value="Oedema of both feet">Oedema of both feet<br>
+				<input type=checkbox name=otherSymptoms value="Severe wasting">Severe wasting<br>
+				<input type=checkbox name=otherSymptoms value="Ear Discharge">Ear Discharge<br>
+				<input type=checkbox name=otherSymptoms value="Severe cyanosis">Severe cyanosis<br></td>
+			</tr>
+			<tr>
+				<th>Total Duration of stay in the health facility:</th>
+				<td><select name="totalDurationOfStayInTheHealthFacility:">
+				<option value="null">Select Duration</option>
+				<option value="<48 hours"><48 hours</option>
+				<option value="48 hours -7 days">48 hours -7 days</option>
+				<option value="8-14 days">8-14 days</option>
+				<option value="14-21 days">14-21 days</option>
+				<option value="More than 21 days">More than 21 days</option>
+				</select>
+			</td></tr>
+			<tr>
+			<th>Investigations</th>
+				<td>
+				<input type=checkbox name=investigations value="Blood glucose">Blood glucose<br>
+				<input type=checkbox name=investigations value="CBC">CBC<br>
+				<input type=checkbox name=investigations value="Urine-Test">Urine-Test<br>
+				<input type=checkbox name=investigations value=" Renal function tests"> Renal function tests<br>
+				<input type=checkbox name=investigations value="CSF">CSF<br>
+				<input type=checkbox name=investigations value="Widal test">Widal test<br>
+				<input type=checkbox name=investigations value="Serum bilirubin">Serum bilirubin<br>
+				<input type=checkbox name=investigations value="Blood culture">Blood culture<br>
+				<input type=checkbox name=investigations value="Liver Function Test">Liver Function Test<br>
+				<input type=checkbox name=investigations value="Urine culture">Urine culture<br>
+				<input type=checkbox name=investigations value="Others (specify)">Others (specify)<br>
+				<textarea rows="2" columns="2" placeholder="Type To Text..." name="investigations" required></textarea></td></tr></table>
+<table class="third" align="center" padding="10px" cellpadding="10">
+	<tr><td><center>Referral Details</center></td></tr></table>
+	<table align="center" padding="25px" cellpadding="10">
+		<tr><td>Was the child referrred from another Centre?</td> 
+		<td>
+		<select id="five" name="wasTheChildReferrredFromAnotherCentre">
+		<option value="null">--Select--</option>
+		<option value="Yes">Yes</option>
+		<option value="No">No</option>
+		<option value="Don't know">Don't know</option>
+		</select></td></tr>
+		<tr>
+				   		<td>Have inter facility referrals been made?</td> 
+							<td>
+								<select id="six" name="haveInterFacilityReferralsBeenMade">
+									<option value="null">--Select--</option>
+									<option value="Yes">Yes</option>
+									<option value="No">No</option>
+									<option value="Don't know">Don't know</option>
+								</select>	
+						</td></tr><tr>
+   							<td>Type of facility from which last referred?</td> 
+							<td>
+								<select disabled="disabled" id="seven" name="typeOfFacilityFromWhichLastReferred">
+									<option value="null">--Select--</option>
+									<option value="24x7 PHC">24x7 PHC</option>
+									<option value="SDH/Rural Hospital/ CHC">SDH/Rural Hospital/ CHC</option>
+									<option value="District Hospital">District Hospital</option>
+									<option value="Private Hospital">Private Hospital</option>
+									<option value="Private clinic">Private clinic</option>
+									<option value="Others">Others</option>
+								</select>	
+							</td></tr><tr>
+   						<td>Have multiple referrals been made?(include both private and public healthfacilities)</td><td>
+							<select id="eight" name="haveMultipleReferralsBeenMade">
+								<option value="null">--Select--</option>
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+								<option value="Don't know">Don't know</option>
+							</select>	
+						</td></tr><tr>
+			   			<td>How many?</td><td>
+							<select disabled="disabled" id="nine" name="howMany">
+								<option value="null">--Select--</option>
+								<option value="One">One</option>
+								<option value="Two">Two</option>
+								<option value="Three">Three</option>
+								<option value="Four">Four</option>
+								<option value="More than 4">More than 4</option>
+							</select></td></tr>
+						</table>
+						<span><center><br><input type=submit class="submit" value="Submit"></center></span>
+
+	</form>
+	<script src="4.2.js"></script>
+	</div>
+	</body>
+	</html>			
