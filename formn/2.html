@@ -155,7 +155,7 @@
             </td></tr>
 
              <tr><td>Address:</td>
-               <td> <select id="input" name="district" onchange="random_function()">
+               <td> <select id="input" name="district" onchange="random_function()" required>
                     <option value="null">--District--</option>
                     <option value="BILASPUR">BILASPUR</option>
                     <option value="CHAMBA">CHAMBA</option>
@@ -171,8 +171,9 @@
                     <option value="UNA">UNA</option>
                 </select>
             
-           <select id="output">
-               <option>Block</option>
+           <select id="output" required>
+               <option>Block
+                 </option>
            </select>
         <br><br>
                 <input type="text" name="pincode" placeholder="Pincode" required>

@@ -15,9 +15,26 @@
 		<table align="center" padding="10px" cellpadding="10">
 			<tr>
 				<td>District*:<br>
-				<input type="text" name="district" placeholder="District" required></td>
+				<select id="input" name="district" onchange="random_function()" required>
+                    <option value="null">--District--</option>
+                    <option value="BILASPUR">BILASPUR</option>
+                    <option value="CHAMBA">CHAMBA</option>
+                    <option value="HAMIRPUR">HAMIRPUR</option>
+                    <option value="KANGRA">KANGRA</option>
+                    <option value="KINNAUR">KINNAUR</option>
+                    <option value="KULLU">KULLU</option>
+                    <option value="LAHAUL AND SPITI">LAHAUL AND SPITI</option>
+                    <option value="MANDI">MANDI</option>
+                    <option value="SHIMLA">SHIMLA</option>
+                    <option value="SIRMAUR">SIRMAUR</option>
+                    <option value="SOLAN">SOLAN</option>
+                    <option value="UNA">UNA</option>
+                </select></td>
 				<td>Block*:<br>
-				<input type="text" name="block"  placeholder="Block" required></td>
+				<select id="output" required>
+               <option>Block
+                 </option>
+           		</select></td>
 			</tr><tr>
 				<td>Village*:<br>
 				<input type="text" name="village" placeholder="Village" required></td>
@@ -137,10 +154,31 @@
 						</tr>
 
 						<tr>
-							<td>11. House address of the deceased*:</td>
-							<td><textarea name="houseAddress" rows="3" cols="40" placeholder="Type to text..." required></textarea></td></td>
-						</tr>
+							<td>11A. House address of the deceased*:</td>
+						 <td> <select name="district">
+                    <option value="null">--District--</option>
+                    <option value="BILASPUR">BILASPUR</option>
+                    <option value="CHAMBA">CHAMBA</option>
+                    <option value="HAMIRPUR">HAMIRPUR</option>
+                    <option value="KANGRA">KANGRA</option>
+                    <option value="KINNAUR">KINNAUR</option>
+                    <option value="KULLU">KULLU</option>
+                    <option value="LAHAUL AND SPITI">LAHAUL AND SPITI</option>
+                    <option value="MANDI">MANDI</option>
+                    <option value="SHIMLA">SHIMLA</option>
+                    <option value="SIRMAUR">SIRMAUR</option>
+                    <option value="SOLAN">SOLAN</option>
+                    <option value="UNA">UNA</option>
+                </select><br><br>
+                <input type="text" name="locality" placeholder="Locality" required>
+            <input type="text" name="address" placeholder="Area and Street"></td>
+        </tr>
+					</tr>
+						<tr>	
+							<td>11B. Pin Code*:</td>
 
+							<td><input type="text" name="pincode" placeholder="Pincode" required></td>
+						</tr>
 						<tr>
 							<td>12 Place of death*:</td>
 							<td>
@@ -644,9 +682,77 @@ labour?*</td>
 </table>
 <div class="declaration">
     	<h3 align="center">NOTE</h3><input type="checkbox" name="declaration" required>&nbsp I have state that all the details filled above are best and true to my knowledge.</div>
-</div>
+    </div>
+
+
 <script src="3.1b.js">
 </script>
+<script>
+            function random_function()
+            {
+                var a=document.getElementById("input").value;
+                if (a=="null"){
+                    var arr=["Block"]
+                }
+                else if(a==="BILASPUR")
+                {
+                    var arr=["SADAR","GHUMARWIN","JHANDUTTA"];
+                }
+                else if(a==="CHAMBA")
+                {
+                    var arr=["TISSA","CHAMBA","MEHLA","BHATTIYAT","SALOONI","BHARMOUR","PANGI"];
+                }
+                else if(a==="HAMIRPUR")
+                {
+                    var arr=["BAMSON","BHORANJ","BIJHARI","HAMIRPUR","NADAUN","SUJNAPUR"];
+                }
+                else if(a==="KANGRA")
+                {
+                    var arr=["RAIT","PANCHRUKHI","DEHRA","FATEHPUR","INDORA","NAGROTA BAGWAN","NURPUR","NAGROTA SURIAN","BAIJNATH","BHAWARNA","KANGRA","LAMBAGAON","SULLAH","PRAGPUR","DHARAMSHALA"];
+                }
+                else if(a==="KINNAUR")
+                {
+                    var arr=["NICHAR","POOH","KALPA"];
+                }
+                else if(a==="KULLU")
+                {
+                    var arr=["ANNI","NAGGAR","NIRMAND"];
+                }
+                else if(a==="LAHAUL AND SPITI")
+                {
+                    var arr=["LAHAUL","SPITI"];
+                }
+                else if(a==="MANDI")
+                {
+                    var arr=["BALH","CHAUNTRA","DHARAMPUR","DRANG","GOHAR","GOPALPUR","KARSOG","SADAR MANDI","SERAJ","SUNDERNAGAR"];
+                }
+                else if(a==="SHIMLA")
+                {
+                    var arr=["NARKANDA","THEOG","BASANTPUR","NANKHARI","CHHOHARA","MASHOBRA","CHOPAL","JUBBAL & KOTHKAI","ROHRU","RAMPUR"];
+                }
+                else if(a==="SIRMOUR")
+                {
+                    var arr=["NAHAN","PAONTA","PACHHAD","RAJGARH","SANGRAH","SHILLAI"];
+                }
+                else if(a==="SOLAN")
+                {
+                    var arr=["DHARAMPUR","KANDAGHAT","KUNIHAR","NALAGARH","SOLAN"];
+                }
+
+                else if(a==="UNA")
+                {
+                    var arr=["AMB","BANGANA","GAGRET","HAROLI","UNA"];
+                }
+                var string="";
+               
+                for(i=0;i<arr.length;i++)
+                {
+                    string=string+"<option>"+arr[i]+"</option>";
+                }
+                string="<select name='any_name'>"+string+"</select>";
+                document.getElementById("output").innerHTML=string;
+            }
+        </script>
 
 <form action="action.php">
         <span><center><br><input type="submit" class="submit" value="Submit"></center></span>
