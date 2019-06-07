@@ -3,6 +3,72 @@
 <head>
     <title>2.1</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+     <script>
+            function random_function()
+            {
+                var a=document.getElementById("input").value;
+                if (a=="null"){
+                    var arr=["Block"]
+                }
+                else if(a==="BILASPUR")
+                {
+                    var arr=["SADAR","GHUMARWIN","JHANDUTTA"];
+                }
+                else if(a==="CHAMBA")
+                {
+                    var arr=["TISSA","CHAMBA","MEHLA","BHATTIYAT","SALOONI","BHARMOUR","PANGI"];
+                }
+                else if(a==="HAMIRPUR")
+                {
+                    var arr=["BAMSON","BHORANJ","BIJHARI","HAMIRPUR","NADAUN","SUJNAPUR"];
+                }
+                else if(a==="KANGRA")
+                {
+                    var arr=["RAIT","PANCHRUKHI","DEHRA","FATEHPUR","INDORA","NAGROTA BAGWAN","NURPUR","NAGROTA SURIAN","BAIJNATH","BHAWARNA","KANGRA","LAMBAGAON","SULLAH","PRAGPUR","DHARAMSHALA"];
+                }
+                else if(a==="KINNAUR")
+                {
+                    var arr=["NICHAR","POOH","KALPA"];
+                }
+                else if(a==="KULLU")
+                {
+                    var arr=["ANNI","NAGGAR","NIRMAND"];
+                }
+                else if(a==="LAHAUL AND SPITI")
+                {
+                    var arr=["LAHAUL","SPITI"];
+                }
+                else if(a==="MANDI")
+                {
+                    var arr=["BALH","CHAUNTRA","DHARAMPUR","DRANG","GOHAR","GOPALPUR","KARSOG","SADAR MANDI","SERAJ","SUNDERNAGAR"];
+                }
+                else if(a==="SHIMLA")
+                {
+                    var arr=["NARKANDA","THEOG","BASANTPUR","NANKHARI","CHHOHARA","MASHOBRA","CHOPAL","JUBBAL & KOTHKAI","ROHRU","RAMPUR"];
+                }
+                else if(a==="SIRMOUR")
+                {
+                    var arr=["NAHAN","PAONTA","PACHHAD","RAJGARH","SANGRAH","SHILLAI"];
+                }
+                else if(a==="SOLAN")
+                {
+                    var arr=["DHARAMPUR","KANDAGHAT","KUNIHAR","NALAGARH","SOLAN"];
+                }
+
+                else if(a==="UNA")
+                {
+                    var arr=["AMB","BANGANA","GAGRET","HAROLI","UNA"];
+                }
+                var string="";
+               
+                for(i=0;i<arr.length;i++)
+                {
+                    string=string+"<option>"+arr[i]+"</option>";
+                }
+                string="<select name='any_name'>"+string+"</select>";
+                document.getElementById("output").innerHTML=string;
+            }
+        </script>
 </head>
 <body>
     <div class="container-fluid">
@@ -89,21 +155,26 @@
             </td></tr>
 
              <tr><td>Address:</td>
-               <td> <select name="district">
+               <td> <select id="input" name="district" onchange="random_function()">
                     <option value="null">--District--</option>
-                    <option value="Bilaspur">Bilaspur</option>
-                    <option value="Chamba">Chamba</option>
-                    <option value="Hamirpur">Hamirpur</option>
-                    <option value="Kangra">Kangra</option>
-                    <option value="Kinnaur">Kinnaur</option>
-                    <option value="kullu">kullu</option>
-                    <option value="Lahaul and Spiti">Lahaul and Spiti</option>
-                    <option value="mandi">Mandi</option>
-                    <option value="shimla">Shimla</option>
-                    <option value="Sirmaur">Sirmaur</option>
-                    <option value="solan">Solan</option>
-                    <option value="una">Una</option>
-                </select><br><br>
+                    <option value="BILASPUR">BILASPUR</option>
+                    <option value="CHAMBA">CHAMBA</option>
+                    <option value="HAMIRPUR">HAMIRPUR</option>
+                    <option value="KANGRA">KANGRA</option>
+                    <option value="KINNAUR">KINNAUR</option>
+                    <option value="KULLU">KULLU</option>
+                    <option value="LAHAUL AND SPITI">LAHAUL AND SPITI</option>
+                    <option value="MANDI">MANDI</option>
+                    <option value="SHIMLA">SHIMLA</option>
+                    <option value="SIRMAUR">SIRMAUR</option>
+                    <option value="SOLAN">SOLAN</option>
+                    <option value="UNA">UNA</option>
+                </select>
+            
+           <select id="output">
+               <option>Block</option>
+           </select>
+        <br><br>
                 <input type="text" name="pincode" placeholder="Pincode" required>
                 <input type="text" name="locality" placeholder="Locality" required><br><br>
             <input type="text" name="address" placeholder="Area and Street" required>
